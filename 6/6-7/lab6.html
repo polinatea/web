@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Тест</title>
+    <style>
+        input:required:invalid {
+            background-color: rgb(255, 223, 223);
+        }
+
+        #body {
+            background-color: #E0FFFF;
+            color: black;
+            font-size: 15px;
+        }
+    </style>
+    <script src="MyScript2.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body id="body">
+    <h1 style="text-align: center;">Тестирование</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Вопрос №1
+            </legend>
+            <label>Сколько процентов жизни кошки проводят во сне?</label>
+            <p><input type="radio" id="radio-1" name="1">60%</p>
+            <p><input type="radio" id="radio-2" name="1">70%</p>
+            <p><input type="radio" id="radio-3" name="1">80%</p>
+            <p><input type="radio" id="radio-4" name="1">90%</p>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Вопрос №2
+            </legend>
+            <label>Какие из предложенных названий являются названиями пород кошек?</label>
+            <p><input type="checkbox" id="checkbox-1">Бенгальская</p>
+            <p><input type="checkbox" id="checkbox-2">Скоттиш-фолд</p>
+            <p><input type="checkbox" id="checkbox-3">Корниш-рекс</p>
+            <p><input type="checkbox" id="checkbox-4">Сунгурская</p>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Вопрос №3
+            </legend>
+            <label>К какому отряду относятся кошки?</label>
+            <p><input type="text" id="otryad"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Вопрос №4
+            </legend>
+            <label>Какой мировой рекорд по продолжительности жизни среди кошек (в годах)?</label>
+            <p><input type="text" id="record"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Вопрос №5
+            </legend>
+            <label>Установите соответствие:</label><br>
+
+            <p>
+                <label>Кошка с очень короткими лапами</label>
+                <select id="select-1" size="1">
+                    <option value="0" selected>Ашера</option>
+                    <option value="1">Манчкин</option>
+                    <option value="0">Каракал</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Кошка, внешне напоминающая рысь</label>
+                <select id="select-2" size="1">
+                    <option value="0" selected>Ашера</option>
+                    <option value="0">Манчкин</option>
+                    <option value="1">Каракал</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Выдуманная порода кошки</label>
+                <select id="select-3" size="1">
+                    <option value="1" selected>Ашера</option>
+                    <option value="0">Манчкин</option>
+                    <option value="0">Каракал</option>
+                </select>
+            </p>
+
+        </fieldset>
+        <p><button type="button" onclick="result()">Узнать результат</button></p>
+
+        <fieldset id="res" style="display: none;">
+            <legend>
+                Результат
+            </legend>
+            <div id="result">
+            </div>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

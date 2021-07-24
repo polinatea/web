@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заявка</title>
+    <script src="Form_Script.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body id ="body">
+
+<form onSubmit="return CheckForm(this)">
+        <fieldset>
+            <legend>Информация о себе</legend>
+            <p>
+                <label>Фамилия </label>
+                <input id="surname" type="text" style="margin-left: 7pt;" autofocus required placeholder="Иванов"
+                    pattern="[A-Za-zА-Яа-яЁё]{1,20}">
+            </p>
+			
+			<p>
+                <label>Имя</label>
+                <input id="name" type="text" style="margin-left: 7pt;"   required placeholder="Иван"
+                    pattern="[A-Za-zА-Яа-яЁё]{1,20}">
+            </p>
+			
+			<p>
+                <label>Отчество</label>
+                <input id="patronymic" type="text" style="margin-left: 7pt;" required placeholder="Петрович"
+                    pattern="[A-Za-zА-Яа-яЁё]{1,20}">
+            </p>
+
+            <p>
+                <label>Дата рождения</label>
+                <input id="birthday" type="date"  required style="margin-left: 7pt;">
+            </p>
+
+            <p>
+                <label>Электронная почта</label>
+                <input id="email" type="email" style="margin-left: 7pt;" required placeholder="mail@example.com">
+            </p>
+
+            <p>
+                <label>Ссылка на домашнюю страницу(Например страницу вконтакте)</label>
+                <input id="home_page" type="url" style="margin-left: 7pt;" required placeholder="www.example.com"><br>
+            </p>
+        </fieldset>
+		 <fieldset>
+            <legend>Дополнительная информация</legend>
+         <br>
+                <input type="checkbox" id="checkbox1" oninput="onChecked(1, 'checkbox1')">Школьник<br>
+            <fieldset style="display: none;" id="1">
+                <p><input type="radio" class="klass" name="klass" checked value="1-3 класс"> 1-3 Класс</p>
+                <p><input type="radio" class="klass" name="klass" value="4-6 Класс"> 4-6 Класс</p>
+                <p><input type="radio" class="klass" name="klass" value="7-9 Класс"> 7-9 Класс</p>
+                <p><input type="radio" class="klass" name="klass" value="10-11 Класс"> 10-11 Класс</p>
+            </fieldset>
+          
+
+            <br>
+                <input type="checkbox" id="checkbox2" oninput="onChecked(2, 'checkbox2')">Студент<br>
+            <fieldset style="display: none;" id="2">
+                <p>
+                    <label>Институт</label>
+                    <input id="mesto" type="text" style="margin-left: 7pt;">
+                </p>
+                <p>
+                    <label>Курс</label>
+                    <select id ="sel">
+						<option value= "1">1</option>
+						<option value= "2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<input type="button" onclick="getValue()" value="Выбрать"/>
+                </p>
+            </fieldset>
+           
+			
+			<br>
+                <input type="checkbox" id="checkbox3" oninput="onChecked(3, 'checkbox3')">Другое<br>
+            <fieldset style="display: none;" id="3">
+                <p><input type="radio" class="drugoe" name="drugoe" checked value="Взрослый"> Взрослый</p>
+                <p><input type="radio" class="drugoe" name="drugoe" value="Ветеран"> Ветеран</p>
+            </fieldset>
+            
+        </fieldset>
+		
+        <fieldset>
+            <legend>Настройки</legend>
+            <p>
+                <label>Выберите цвет текста</label>
+                <input type="color" id="fontcolor" list="colorList" value="#000000" oninput="onFontColorChanged()">
+            </p>
+
+            <p>
+                <label>Выберите цвет фона</label>
+                <input type="color" id="backgroundcolor" list="colorList" value="#E0FFFF"
+                    oninput="onFontColorChanged()">
+            </p>
+			
+            <datalist id ="colorList"> <option value="color"> </datalist>
+            <p>
+                <label>Выберите размер текста</label>
+                <input id="size" type="range" name="font-size" min="5" max="60" value="15" onmouseup="thumbNumber()">
+            </p>
+        </fieldset>
+		
+		    <fieldset id="res" style="display: none;">
+        <legend>Введённая информация</legend>
+        <div id="result">
+        </div>
+    </fieldset>
+		        <p><input type="submit" onclick="">
+				<button type="button" onclick="test()">Пройти тест</button></p>
+				
+    </form>
+</body>
+
+</html>

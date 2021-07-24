@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Тест</title>
+    <style>
+        input:required:invalid {
+            background-color: rgb(255, 223, 223);
+        }
+
+        #body {
+            background-color: #E0FFFF;
+            color: black;
+            font-size: 15px;
+        }
+    </style>
+    <script src="Form_Script2.js"></script>
+    <meta charset="utf-8">
+	<link href="6style.css" rel="stylesheet">
+</head>
+
+<body id="body">
+    <form>
+	<div class ="big_boss">
+		<div class="header">
+			<h1 style="text-align: center;">Тестирование</h1>
+		</div>
+
+		<div class="one">
+			<h2>Вопрос №1</h2>
+            <label>В каком году была образована Международная федерация настольного тенниса?</label>
+            <p><input type="radio" id="fed1" name="1">1920 г.</p>
+            <p><input type="radio" id="fed2" name="1">1926 г.</p>
+            <p><input type="radio" id="fed3" name="1">1931 г.</p>
+		</div>
+
+        <div class="two">
+			<h2>Вопрос №2</h2>
+            <label>Выберете все удары, относящиеся к настольному теннису</label>
+            <p><input type="checkbox" id="udar1">Форхенд</p>
+            <p><input type="checkbox" id="udar2">Подрезка</p>
+            <p><input type="checkbox" id="udar3">Корнер</p>
+            <p><input type="checkbox" id="udar4">Накат</p>
+		</div>
+
+		<div class="three">
+			<h2>Вопрос №3</h2>
+			<br>
+            <label>В какой стране настольный теннис - национальный вид спорта (в ответ только название страны)</label>
+            <p><input type="text" id="country"></p>
+			<br>
+		</div>
+
+		<div class="four">
+			<h2>Вопрос №4</h2>		
+            <label>До скольки очков продолжается партия игры в настольный теннис? (в ответ только цифру)</label>
+            <p><input type="text" id="points"></p>
+			<br>
+		</div>
+<br>
+		<div class="five">
+		<div class ="ques">
+			<h2>Вопрос №5</h2>
+            <label>Установите соответствие:</label><br>
+
+            <p>
+                <label>1</label>
+                <select id="players1" size="1">
+                    <option value="1" selected>Тимо Болл</option>
+                    <option value="0">Ма Лун</option>
+                    <option value="0">Дмитрий Овчаров</option>
+                </select>
+            </p>
+
+            <p>
+                <label>2</label>
+                <select id="players2" size="1">
+                    <option value="0" selected>Тимо Болл</option>
+                    <option value="0">Дмитрий Овчаров</option>
+                    <option value="1">Ма лун</option>
+                </select>
+            </p>
+
+            <p>
+                <label>3</label>
+                <select id="players3" size="1">
+                    <option value="0" selected>Тимо Болл</option>
+                    <option value="1">Дмитрий Овчаров</option>
+                    <option value="0">Ма лун</option>
+                </select>
+            </p>
+			</div>
+			<div class="fiveph">
+		<figure class = "photo1"><img src="photo1.jpg" class="gallery_img" alt="image"><figcaption class="fgc">1</figcaption></figure>
+		<figure class = "photo2"><img src="photo2.jpg" class="gallery_img" alt="image"><figcaption class="fgc">2</figcaption></figure>
+		<figure class = "photo3"><img src="photo3.jpg" class="gallery_img" alt="image"><figcaption class="fgc">3</figcaption></figure>
+		</div>
+		</div>
+		
+		<div class ="btn">
+        <p><button type="button" class="but" onclick="check()">Проверить</button></p>
+		</div>
+        <div id="res" style="display: none;">
+
+               <h2 style="font-size:20pt"> Результат</h2>
+
+            <div id="check">
+            </div>
+        </div>
+
+
+</div>
+    </form>
+</body>
+
+</html>

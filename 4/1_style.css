@@ -1,0 +1,164 @@
+body{
+	background-image: url(fon.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0 ;
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+/* ГЛАВНЫЙ ЭЛЕМЕНТ*/
+.big_boss {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(20px,max-content) minmax(20px,max-content) minmax(20px,max-content) minmax(20px,max-content) minmax(20px,max-content) ;
+	grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+
+/* ХЕДЕР, ЗАГОЛОВОК */
+.header {
+	background-color: #CCCCFF;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+	display: grid;
+	grid-template-columns: minmax(30px,max-content) minmax(30px,max-content) minmax(30px,max-content);
+	grid-template-rows: minmax(30px,max-content) minmax(30px,max-content) minmax(30px,max-content);
+	border-radius: 10px;
+	
+}
+/* ЗАГОЛОВОК ХЕДЕРА*/
+h1
+{
+	padding: 20px 20px 20px 20px;
+	font-size:35pt;
+	text-align: center;
+}
+/* ПОЛОЖЕНИЕ ЗАГОЛОВКА */
+.main_heading{
+	grid-column-start:1;
+	grid-column-end: 3;
+	grid-row-start:2;
+	grid-row-end: 3;
+
+}
+/* ПОЛОЖЕНИЕ ФОТО В ХЕДЕРЕ*/
+.ttphoto{
+	margin-left:100px;
+	grid-column-start:3;
+	grid-column-end:4;
+	grid-row-start:2;
+	grid-row-end: 4;
+	
+}
+/* СВОЙСТВА ФОТО В ХЕДЕРЕ */
+.gallery_img{
+	max-width: 70%;
+    max-height: 70%;
+    object-fit: cover; /*  чтобы изображение могло заполнять высоту и ширину своего блока */
+	border-radius: 10px;
+}
+
+/* НАВИГАЦИЯ */
+.nav{
+	background-color: #CCCCFF;
+	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	display:grid;
+	grid-template-columns: repeat(3, 1fr );
+	grid-template-rows: 10%;
+	border-radius: 10px;
+}
+.menu {
+	list-style-type: none; /*убираем маркеры списка*/
+ 	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.menu a {
+	text-decoration: none; /*убираем подчеркивание текста ссылок*/
+	font-family: sans-serif;
+	color:lavender;
+	display: inline-block;
+	padding:10px 15px; 
+	background-color:#666699;
+	border-radius: 10px;
+}
+.menu li {
+	display:inline;
+}
+
+
+/* ЛЕВЫЙ БОКС (О НАС)*/
+.left_box {
+	background-color: #CCCCFF;
+	grid-column-start:1;
+	grid-column-end:3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	border-radius: 10px;
+	
+}
+
+/* БОКС ВСЕХ БОКСОВ (О НАС)*/
+.text_box{
+	padding: 20px 20px 20px 20px;
+
+}
+
+/* ПРАВЫЙ БОКС (РЕЙТИНГ)*/
+.right_box {
+	background-color: #CCCCFF;
+	grid-column-start:3;
+	grid-column-end:4;
+	grid-row-start: 4;
+	grid-row-end: 6;
+	border-radius: 10px;
+}
+
+/* ЛЕВЫЙ БОКС2 (NEWS)*/
+.left_box2{
+	background-color: #CCCCFF;
+	grid-column-start:1;
+	grid-column-end:3;
+	grid-row-start: 5;
+	grid-row-end:6;
+	border-radius: 10px;
+}
+
+/* ЛЕВЫЙ ФУТЕР (НАПИСАТЬ ПИСЬМО)*/
+.left_footer{
+
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start:6;
+	grid-row-end:7;
+	border-radius: 10px;
+	background-color:#666699;
+}
+
+/* ЦЕНТРАЛЬНЫЙ ФУТЕР (МЫ НАХОДИМСЯ ПО АДРЕСУ..)*/
+.center_footer{
+
+	grid-column-start:2;
+	grid-column-end:3;
+	grid-row-start:6;
+	grid-row-end:7;
+	border-radius: 10px;
+	background-color:#666699;
+}
+
+/* ПРАВЫЙ ФУТЕР (КОПИРАЙТ)*/
+.right_footer{
+	grid-column-start:3;
+	grid-column-end:4;
+	grid-row-start:6;
+	grid-row-end:7;
+	border-radius: 10px;
+	background-color:#666699;
+}

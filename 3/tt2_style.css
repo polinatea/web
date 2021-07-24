@@ -1,0 +1,94 @@
+h1
+{
+	font-size:30pt;
+	text-align: left;
+}
+header
+{
+margin: 20px;
+padding: 40px;
+background-color:#CCCCFF;
+border-radius: 5px;
+}
+.left_aside
+{
+	border-radius: 5px;
+	background-color:#CCCCFF;
+	float: left;
+	margin: 0 1.5%;
+	width: 63%;
+}
+
+
+article
+{
+	border-radius: 5px;
+
+	background-color:#CCCCFF;
+	float: right;
+	margin: 0 1.5%;
+	width: 30%;
+}
+.right_header{
+	background-color:#666699;
+
+}
+
+.h2_right_style {
+	font-size: 100%;
+}
+
+
+.ttphoto{
+margin: 5px;
+
+}
+
+.right_aside{
+font-size: 100%;
+background-color:#666699;	
+}
+
+nav
+{
+margin:20px;
+}
+.menu {
+  list-style-type: none; /*убираем маркеры списка*/
+  margin-left: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+
+
+}
+.menu a {
+	text-decoration: none; /*убираем подчеркивание текста ссылок*/
+	font-family: sans-serif;
+	color:white;
+	display: inline-block;
+	padding:10px 20px;
+	background-color:#666699;
+	border-bottom: 5px solid #5757a0;
+}
+	
+.menu li {
+	display:inline;
+}
+
+.block1{
+	margin: 10px;
+	background-color:#666699;
+}
+	
+section
+{
+	background-color: #666699;
+	padding: 40px;
+	margin: 10px;	
+}
+.h2_right_style{
+	word-wrap: break-word;
+}
+footer{
+	border-radius: 5px;
+	margin:20px;
+}

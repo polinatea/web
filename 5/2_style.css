@@ -1,0 +1,135 @@
+/* ГЛАВНЫЙ ЭЛЕМЕНТ*/
+.big_boss {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(20px,max-content) minmax(20px,max-content) minmax(20px,max-content) minmax(20px,max-content) minmax(20px,max-content) ;
+	grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+/* ХЕДЕР, ЗАГОЛОВОК */
+.header {
+	background-color: #666699;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+	border-radius: 10px;
+	
+}
+/* ЗАГОЛОВОК ХЕДЕРА*/
+h1
+{
+	padding: 20px 20px 20px 20px;
+	font-size:35pt;
+	text-align: center;
+	color:lavender;
+}
+
+
+/* НАВИГАЦИЯ */
+.nav {
+	background-color: #CCCCFF;
+	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	display:grid;
+	grid-template-columns: repeat(3, 1fr );
+	grid-template-rows: 10%;
+	border-radius: 10px;
+}
+.menu {
+	list-style-type: none; /*убираем маркеры списка*/
+ 	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.menu a {
+	text-decoration: none; /*убираем подчеркивание текста ссылок*/
+	font-family: sans-serif;
+	color:lavender;
+	display: inline-block;
+	padding:10px 15px; 
+	background-color:#666699;
+	border-radius: 10px;
+}
+.menu li {
+	display:inline;
+}
+
+/* ЛЕВЫЙ БОКС (О ШКОЛЕ)*/
+.left_box {
+	background-color: #666699;
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start: 4;
+	grid-row-end: 6;
+	border-radius: 10px;	
+}
+/* БОКС ВСЕХ БОКСОВ */
+.text_box{
+	padding: 20px 20px 20px 20px;
+
+}
+
+/* ПРАВЫЙ БОКС (ГАЛЕРЕЯ)*/
+.right_box {
+	background-color: #CCCCFF;
+	grid-column-start:2;
+	grid-column-end:4;
+	grid-row-start: 4;
+	grid-row-end: 6;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+/* Я С КАТЕЙ */
+.photo1{
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+/* ПАПА И ЗАХАР */
+.photo2{
+	grid-column-start:2;
+	grid-column-end:3;
+	grid-row-start: 1;
+	grid-row-end: 2;	
+}
+/* ОБЩЕЕ ФОТО */
+.photo3{
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start: 2;
+	grid-row-end: 3;		
+}
+/* МОЛДАВИЯ */
+.photo4{
+	grid-column-start:2;
+	grid-column-end:3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+/* СВОЙСТВА ФОТО В RIGHT_BOX */
+.gallery_img{
+	max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /*  чтобы изображение могло заполнять высоту и ширину своего блока */
+	border-radius: 10px;
+}
+
+/* ФУТЕР (НАПИСАТЬ ПИСЬМО)*/
+.footer{
+	background-color: #666699;
+	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start: 6;
+	grid-row-end: 7;	
+	border-radius: 10px;
+}

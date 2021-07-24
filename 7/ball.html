@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>7 lab</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <canvas width="900px" height="500px" id="stiilb">Что-то пошло не по плану</canvas>
+		
+		<canvas id="myCanvas" width="300" height="200"
+            style="background-color:#eee; border:1px solid #ccc;">
+            Ваш браузер не поддерживает Canvas
+        </canvas>
+				<canvas id="cvs"></canvas>
+				
+        <script>
+		var cvs = document.getElementById("cvs");
+		var cv = cvs.getContext("2d");
+
+	cv.fillStyle = "green";
+	cv.fillRect(10, 10, 100, 100);
+
+            var canvas = document.getElementById("myCanvas"), 
+                ctx2 = canvas.getContext("2d");
+				        ctx2.shadowOffsetX = 4;
+        ctx2.shadowOffsetY = 4;
+        ctx2.shadowBlur = 3;
+        ctx2.shadowColor = 'grey';
+		ctx2.fillStyle = "green";
+        ctx2.font = "40px Times New Roman";
+        ctx2.fillText("Hello", 10, 130);
+        ctx2.font = "bold 30px Arial";
+        ctx2.fillText("Whatsapp bro", 10, 170);
+		
+		var img = new Image();
+        img.onload = function () {
+          ctx2.drawImage(img, 150, 15, 100, 100);
+        }
+        img.src = "sun.jpg";
+
+        </script>
+        <script src="script.js"></script>
+
+        <div>
+            <p>Цвет фона <input type="color" id="backgroundColor" value="#CCCCFF"></p>
+            <p>Цвет кружочка <input type="color" id="circleColor" value="#666699"></p>
+
+        </div>
+    </body>
+
+</html>

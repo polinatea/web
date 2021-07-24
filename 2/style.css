@@ -1,0 +1,92 @@
+h1
+{
+	color: brown;
+	font-family: "Arial", Georgia, Serif;
+	line-height: 1.3em;
+	text-align: center;
+}
+p 
+{   
+    margin: 30px; /* Отступы от границ блока с абзацем */
+    font-family: Arial; /* Шрифт */
+	text-align: justify;
+}
+body
+{
+	font-size: 2rem;
+	color: brown;
+	background: #EEE8AA; /* Короткая запись */
+}
+
+.other_text_dec /*селектор по классу a*/
+{
+	color: darkred;
+	font-weight: bold;
+	word-spacing: 30px;
+}
+
+
+ul
+{
+list-style: none; /* Убираем маркеры и нумераторы полностью */
+color: black; /* Маркеры красного цвета */
+content: none;	
+}
+li:before /* псевдоэлемент */
+{
+    content: '\25bc '; /* Добавляем маркер в шестнадцатеричном формате*/
+    padding-right: 5px; /* Расстояние от маркеров до текста */
+    color: brown; /* Маркеры красного цвета */	
+}
+li li:before{
+    content: '\25ba'; /* Добавляем маркер в шестнадцатеричном формате*/
+    padding-right: 4px; /* Расстояние от маркеров до текста */
+    color: brown; /* Маркеры красного цвета */
+}
+#help { /* селектор id */
+	color: black;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 960px; /* Положение элемента от левого края */
+    top: 150px; /* Положение от верхнего края */
+    width: 225px; /* Ширина блока */
+    padding: 5px; /* Поля вокруг текста */
+    background: #B7B86D; /*Цвет фона */ 
+   }
+   
+img 
+{
+	display: none;
+}
+#switch:checked ~ img /* родственные селекторы  */
+{ 							
+	display: block; 	/*В данном примере все изображения изначально скрыты, но отображаются если поставить в поле формы галочку.*/
+}
+
+p:nth-child(4)::first-letter /* псевдоэлемент определяет стиль первого символа в тексте */
+{
+	font-size: 200%; /* Относительные единицы измерения размеров */
+	font-weight: bolder;
+	color: darkred;
+	font-style:oblique;
+	font-family: "Times New Roman", Times, serif; 
+}
+
+
+#link_change:link /* Псевдокласс задает стиль ссылкам, по которым пользователь еще не перешел; */
+{
+	color: blue;
+}
+#link_change:visited { /* Псевдокласс задает цвет посещенных ссылок */
+	color: red;
+}
+#link_change:hover { /* Псевдокласс задает цвет ссылок при наведении на них курсора мыши */
+    color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; 
+	background: #E5E67C; /* Цвет фона */
+}
+a{color:black;} /* Приоритет стиля */
+
+.short_properties
+{
+	margin:30px 30px 5px;
+}
